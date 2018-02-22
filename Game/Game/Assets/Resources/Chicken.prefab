@@ -136,6 +136,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a1d1812c4645b64589bbfb1113839de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 19
+  moveSpeed: 15
   target: {fileID: 0}
   chickenPen: {fileID: 0}

@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 136644e535b4a714db47919ae63a4891
+timeCreated: 1521158753
+licenseType: Pro
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Championship
+  fontNames:
+  - Championship
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

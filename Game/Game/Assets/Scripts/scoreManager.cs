@@ -14,7 +14,7 @@ public class scoreManager : MonoBehaviour {
 	public Text winText;
 
 	 void Awake(){
-	 Time.timeScale = 1;
+	 	Time.timeScale = 1;
 	}
 
 	void Start () {
@@ -23,7 +23,7 @@ public class scoreManager : MonoBehaviour {
 			score = 0;
 	}
 
-	void update(){
+	void Update(){
 		if(score < 0)
 			score = 0;
 		text.text = " " + score;

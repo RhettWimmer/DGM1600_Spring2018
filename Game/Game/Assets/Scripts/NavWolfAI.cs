@@ -6,12 +6,13 @@ public class NavWolfAI : MonoBehaviour {
 
 	public Transform player;
 	public float speed;
-	//Detection
+	//Wander
 	public float wanderRadius;
 	public float wanderTimer;
+	//Detection
 	public float alertDist;
 	public float attackDist;
-
+	//Private
 	private Animator state;
 	private Vector3 direction;
 	private Transform target;
@@ -53,6 +54,7 @@ public class NavWolfAI : MonoBehaviour {
 				state.SetBool("isFollowing",false);
 				state.SetBool("isAttacking",true);
 				state.SetBool("isWandering",false);
+				
 			}
 		}
 	//wandering

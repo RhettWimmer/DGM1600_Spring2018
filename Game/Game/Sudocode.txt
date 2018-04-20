@@ -1,0 +1,20 @@
+Nav mesh ground/world space:
+
+Canvases/Scenes:
+	Start
+	HUD
+	Pause
+	Win
+	Loss
+Player:
+	Camera/Movement
+	Shoot/Bullet
+Cats:
+	20 cats
+	Different Speeds
+	Cower scripts
+	Pickup/score +
+Enemy:
+	Die from damage
+	Do Damage
+	Respawn

@@ -7,7 +7,7 @@ public class WolfAI : MonoBehaviour {
 	public Transform target;
 	public int damage;
 
-	void onTriggerStay(Collider other){
+	void OnTriggerStay(Collider other){
 		if(other.gameObject.name == "Player"){
 			transform.LookAt(target);
 			transform.Translate(Vector3.forward*moveSpeed*Time.deltaTime);

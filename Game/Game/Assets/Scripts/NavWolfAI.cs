@@ -6,6 +6,7 @@ public class NavWolfAI : MonoBehaviour {
 
 	public Transform player;
 	public float speed;
+	public float damage;
 	//Wander
 	public float wanderRadius;
 	public float wanderTimer;
@@ -26,6 +27,7 @@ public class NavWolfAI : MonoBehaviour {
 	}
 	void Start () {
 		state = GetComponent<Animator>();
+		distance = Vector3.Distance(player.position, transform.position);
 	}
 
     void Update(){
@@ -36,6 +38,9 @@ public class NavWolfAI : MonoBehaviour {
 			state.SetBool("IsFollowing",true);
 			state.SetBool("IsWandering",false);
 			state.SetBool("IsAttacking",false);
+			speed = speed + 2;
+			transform.LookAt(player);
+			transform.Translate(Vector3.forward*speed*Time.deltaTime);
 		}
 		//Attacking
 		else if(distance <= alertDist){

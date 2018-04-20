@@ -262,8 +262,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentHealth: 100
-  hp: {fileID: 0}
-  maxHP: {fileID: 0}
+  hp: {fileID: 1563362870}
+  maxHP: {fileID: 1300301459}
 --- !u!114 &134437162
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -387,7 +387,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 134437160}
   m_LocalRotation: {x: -0, y: 0.72677857, z: -0, w: -0.6868719}
-  m_LocalPosition: {x: 72.4, y: 130.17, z: -193.9}
+  m_LocalPosition: {x: 50.5, y: 130.17, z: -192.13}
   m_LocalScale: {x: 1, y: 3.3684545, z: 1}
   m_Children:
   - {fileID: 979221884}
@@ -1227,7 +1227,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6cab869af63b28c4a9aaaf073f3b7cee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectile: {fileID: 54703750147586116, guid: 1c088cd4e3f7d534aae07683c0af2b99,
+  projectile: {fileID: 54870900010448032, guid: 258defba27840854ca5a887e24588337,
     type: 2}
   shootPoint: {fileID: 979221884}
   shootSpeed: 5000
@@ -1345,7 +1345,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4ed63a4fe9765946aa4239c7aff4105, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  winScore: 1000
+  winScore: 100
   text: {fileID: 1018712579}
   winText: {fileID: 1749557651}
 --- !u!1 &1057586446
@@ -2433,6 +2433,7 @@ GameObject:
   - component: {fileID: 1726603270}
   - component: {fileID: 1726603271}
   - component: {fileID: 1726603272}
+  - component: {fileID: 1726603273}
   m_Layer: 0
   m_Name: Wolf
   m_TagString: Untagged
@@ -2570,6 +2571,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 134437169}
   speed: 5
+  damage: 0
   wanderRadius: 100
   wanderTimer: 10
   alertDist: 20
@@ -2589,6 +2591,18 @@ MonoBehaviour:
   maxHealth: 3
   spawnPoint: {fileID: 994581030}
   points: 10
+--- !u!114 &1726603273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1726603263}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e7752fb5bdb12948bb1d37dc3680bf2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 10
 --- !u!1 &1749557649
 GameObject:
   m_ObjectHideFlags: 0
@@ -2878,7 +2892,7 @@ Transform:
   m_GameObject: {fileID: 1921746070}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 92.929, y: 128.21, z: -213.23}
-  m_LocalScale: {x: 64, y: 1, z: 64}
+  m_LocalScale: {x: 14.031736, y: 0.21924588, z: 14.031736}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3

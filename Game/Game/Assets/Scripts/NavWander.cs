@@ -17,6 +17,7 @@ public class NavWander : MonoBehaviour {
 	public int  points; 
 	public bool isWandering = true;
 
+
 	void OnEnable(){
 		agent = GetComponent<UnityEngine.AI.NavMeshAgent> () ;
 		timer = wanderTimer;
@@ -56,5 +57,6 @@ public class NavWander : MonoBehaviour {
 	// 		transform.position = chickenPen.position;
 	// 		transform.rotation =chickenPen.rotation;
 	//	}
-	}
 
+
+}

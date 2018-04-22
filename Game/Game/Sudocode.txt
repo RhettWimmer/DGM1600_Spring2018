@@ -14,7 +14,7 @@ Cats:
 	Different Speeds
 	Cower scripts
 	Pickup/score +
-Enemy:
+Bear:
 	Die from damage
 	Do Damage
 	Respawn

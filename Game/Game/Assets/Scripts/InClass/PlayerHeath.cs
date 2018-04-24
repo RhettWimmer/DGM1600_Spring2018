@@ -10,7 +10,10 @@ public class PlayerHeath : MonoBehaviour {
 
 	public Text hp;
 	//public Text maxHP;
-
+	public Text lossText;
+void Start(){
+	lossText.GetComponent<Text>().enabled = false;
+}
 void Update () {
 		hp.text = currentHealth.ToString();
 		//maxHP.text = maxHealth.ToString();		
@@ -21,6 +24,14 @@ public void TakeDamage(int amount){
 	if(currentHealth <= 0){
 		currentHealth = 0;
 		print("YOU DIED");
+		}
+	}
+
+	public void Loss(){
+		if(currentHealth == 0){
+			print("Dead");
+			lossText.GetComponent<Text>().enabled = true;
+			Time.timeScale=0;
 		}
 	}
 }

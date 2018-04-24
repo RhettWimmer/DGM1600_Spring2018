@@ -16,6 +16,7 @@ public class NavWander : MonoBehaviour {
 
 	public int  points; 
 	public bool isWandering = true;
+	public float moveSpeed;
 
 
 	void OnEnable(){
@@ -43,20 +44,20 @@ public class NavWander : MonoBehaviour {
 
 		return navHit.position;
 	}
-	// 	//Chicken Interaction
-	// 	void OnTriggerStay(Collider other){
-	// 	if(other.gameObject.name == "Player"){
-	// 		Debug.Log("Player has entered chickens trigger");
-	// 		transform.LookAt(target);
-	// 		transform.Translate(Vector3.back*moveSpeed*Time.deltaTime);
-	// 	}
+		//Chicken Interaction
+		void OnTriggerStay(Collider other){
+		if(other.gameObject.name == "Player"){
+			Debug.Log("Player has entered chickens trigger");
+			transform.LookAt(target);
+			transform.Translate(Vector3.back*moveSpeed*Time.deltaTime);
+		}
 		
-	// }
-	// void OnCollisionEnter(Collision other){
-	// 	if(other.gameObject.name == "Player"){
-	// 		transform.position = chickenPen.position;
-	// 		transform.rotation =chickenPen.rotation;
-	//	}
-
+	}
+	void OnCollisionEnter(Collision other){
+		if(other.gameObject.name == "Player"){
+			transform.position = chickenPen.position;
+			transform.rotation =chickenPen.rotation;
+		}
+	}
 
 }

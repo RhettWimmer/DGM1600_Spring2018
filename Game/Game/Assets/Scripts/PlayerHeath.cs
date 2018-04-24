@@ -9,11 +9,11 @@ public class PlayerHeath : MonoBehaviour {
 	public int currentHealth = maxHealth;
 
 	public Text hp;
-	public Text maxHP;
+	//public Text maxHP;
 
 void Update () {
 		hp.text = currentHealth.ToString();
-		maxHP.text = maxHealth.ToString();		
+		//maxHP.text = maxHealth.ToString();		
 }
 
 public void TakeDamage(int amount){

@@ -5,9 +5,18 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Main Menu.unity
     guid: 9a9110d08925f5c49b7b2f001f0de60d
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Test.unity
     guid: 670278058f7f6f841bce705e9b627c18
+  - enabled: 1
+    path: Assets/Scenes/MainMenuTurboCats.unity
+    guid: cfd8df3baadcc474ab71260f1cea0bd8
+  - enabled: 1
+    path: Assets/Scenes/Turbo Cats Collector.unity
+    guid: a3c595b11df759c4292a7514880977b8
+  - enabled: 1
+    path: Assets/Scenes/Credit.unity
+    guid: b3e78b813f71c0047ab02d2ddf5fe0f0

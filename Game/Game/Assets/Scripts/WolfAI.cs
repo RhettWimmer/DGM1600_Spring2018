@@ -16,7 +16,6 @@ public class WolfAI : MonoBehaviour {
 
 
 void OnCollisionEnter(Collision other){
-	print("Wolf is attacking!");
 	var hit = other.gameObject;
 	var health = hit.GetComponent<PlayerHeath>();
 

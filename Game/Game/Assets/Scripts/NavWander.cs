@@ -7,11 +7,10 @@ public class NavWander : MonoBehaviour {
 	public float wanderRadius;
 	public float wanderTimer;
 
-	private Transform target;
+	public Transform target;
 	private UnityEngine.AI.NavMeshAgent agent;
 	private float timer;
 
-	public Transform enemy;
 	public Transform chickenPen;
 
 	public int  points; 

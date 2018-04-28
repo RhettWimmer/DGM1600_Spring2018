@@ -16,7 +16,7 @@ public class wolfHealth : MonoBehaviour {
 		currentHealth -= amount;
 		if(currentHealth <= 0){
 			currentHealth = 0;
-			print("Wolf is Dead!");
+			print("Bear is Dead!");
 			//scoreManager.AddPoints(points);
 			transform.position = spawnPoint.position;
 			transform.rotation = spawnPoint.rotation;

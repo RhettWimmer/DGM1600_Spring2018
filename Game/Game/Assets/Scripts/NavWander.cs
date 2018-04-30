@@ -55,9 +55,14 @@ public class NavWander : MonoBehaviour {
 	void OnCollisionEnter(Collision other){
 		if(other.gameObject.name == "Player"){
 			scoreManager.AddPoints(points);
-			transform.position = chickenPen.position;
-			transform.rotation =chickenPen.rotation;
+			// transform.position = chickenPen.position;
+			// transform.rotation =chickenPen.rotation;
+			Destroy(gameObject);
+			Debug.Log("You've caught a cat");
 		}
-	}
 
+		// if(other.gameObject.name == "Bullet 1 1(clone)"){
+		// 	Debug.Log("DO NOT SHOOT CAT");
+		// }
+	}
 }

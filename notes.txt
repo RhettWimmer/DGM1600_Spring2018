@@ -1,3 +1,0 @@
-Rigidbody is gravity
-Float is a number not decimal
-instantiate creates a game object ("birth")

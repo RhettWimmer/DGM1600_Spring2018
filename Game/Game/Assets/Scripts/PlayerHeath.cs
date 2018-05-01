@@ -49,7 +49,6 @@ public void TakeDamage(int amount){
 
 		}
 	}
-
 	// public void Loss(){
 	// 	if(currentHealth == 0){
 	// 		print("Dead");

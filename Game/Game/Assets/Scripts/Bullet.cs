@@ -6,9 +6,9 @@ public class Bullet : MonoBehaviour {
 	public int damage = 1; //how much damage it does
 	public int time = 5; //how long it lives before leaving;
 
-	public Text catWarn;
+	// public Text catWarn;
 	
-	//public Text noShootCat;
+	// public Text noShootCat;
 
 	void Start () {
 		StartCoroutine(DestroyBullet());

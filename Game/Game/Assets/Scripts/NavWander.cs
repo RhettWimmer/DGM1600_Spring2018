@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class NavWander : MonoBehaviour {
 
@@ -17,7 +18,15 @@ public class NavWander : MonoBehaviour {
 	public bool isWandering = true;
 	public float moveSpeed;
 
+	// public float timeOnScreen = 5;
 
+	//  public GameObject rock;
+
+	 public Text catWarn;
+
+	void Start(){
+		catWarn.GetComponent<Text>().enabled = false;
+	}
 	void OnEnable(){
 		agent = GetComponent<UnityEngine.AI.NavMeshAgent> () ;
 		timer = wanderTimer;
@@ -61,8 +70,14 @@ public class NavWander : MonoBehaviour {
 			Debug.Log("You've caught a cat");
 		}
 
-		// if(other.gameObject.name == "Bullet 1 1(clone)"){
-		// 	Debug.Log("DO NOT SHOOT CAT");
-		// }
+		if(other.gameObject.name == "Bullet 1 1(Clone)"){
+		catWarn.GetComponent<Text>().enabled = true;
+		Debug.Log("DO NOT SHOOT CAT");
+		}		
 	}
+
+	// IEnumerator deleteText(){
+	// 	yield return new WaitForSeconds(timeOnScreen); 
+	// 	Destroy(catWarn);	
+	// }
 }
